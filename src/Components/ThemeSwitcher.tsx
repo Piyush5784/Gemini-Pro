@@ -6,7 +6,7 @@ const ThemeSwitcher = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
-    const isDarkMode = localStorage.getItem("darkMode") === "false";
+    const isDarkMode = localStorage.getItem("darkMode") === "false" ? false : true;
     setDarkMode(isDarkMode);
   }, []);
 
